@@ -1,0 +1,126 @@
+/* MessageHistory.css */
+
+.message-history-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10%;
+  }
+  
+  .user-list {
+    flex: 1;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+  
+  .user-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  .user-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .user-list li.selected {
+    background-color: #0056b3;
+  }
+  
+  .chat-panel {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  
+  .chat-panel h2 {
+    margin-bottom: 20px;
+  }
+  
+  .chat-messages {
+    list-style: none;
+    padding: 10px;
+    
+  }
+  
+  .message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .current-user-message {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 50%; /* Adjust the width as needed */
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right; /* Align messages from the current user to the right */
+    margin-left: auto; 
+  }
+  
+  .other-user-message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    background-color: #e6e6e6;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 50%; /* Adjust the width as needed */
+    word-wrap: break-word;
+  }
+  
+  .message-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .chat-messages::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar width */
+  }
